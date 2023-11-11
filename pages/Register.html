@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+  <link rel="shortcut icon" href="../src/Logo1PNG.png">
+  <link rel="stylesheet" href="../bootstrap/icons/bootstrap-icons-1.11.1/bootstrap-icons.min.css" />
+  <title>Document</title>
+</head>
+
+<body id="contenedor">
+  <nav class="navbar navbar-expand-lg navbar-dark backp2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Registro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="../index.html"><i class="bi-house"></i>
+              Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi-shop"></i> Servicios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="LavadoGen.html">Lavado general</a></li>
+              <li><a class="dropdown-item" href="LavadoPulid.html">Lavado y pulido</a></li>
+              <li><a class="dropdown-item" href="limpiezaTap.html">Limpieza de tapiceria completa</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="allServices.html">Todos los servicios</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="Promociones.html"><i class="bi-coin"></i>
+              Promociones</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="bi-people"></i> Sesión
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Login.html">Inicio de sesión</a></li>
+              <li><a class="dropdown-item" href="Register.html">Registrarse</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="Contactos.html"><i
+                class="bi-phone"></i>Sobre Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container general_container">
+    <div class="col-12">
+      <div class="form-container gap">
+        <div class="row">
+          <div class="col-6">
+            <label for="idNombre" class="letra_blanca">Nombre:</label>
+            <input class="form-control" id="idNombre" placeholder="Nombre">
+          </div>
+          <div class="col-6">
+            <label for="idApellido" class="letra_blanca">Apellido:</label>
+            <input class="form-control" id="idApellido" placeholder="Apellido">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="idNombreUsuario" class="letra_blanca">Nombre de usuario:</label>
+            <input class="form-control" id="idNombreUsuario" placeholder="Nombre de usuario">
+          </div>
+          <div class="col-6">
+            <label for="idTelefono" class="letra_blanca">Telefono:</label>
+            <input class="form-control" id="idTelefono" type="number" placeholder="Telefono">
+          </div>
+        </div>
+
+        <label for="idDireccion" class="letra_blanca">Direccion:</label>
+        <input class="form-control" id="idDireccion" placeholder="Direccion">
+
+        <label for="idCorreo" class="letra_blanca">Correo:</label>
+        <input class="form-control" id="idCorreo" placeholder="Correo" type="email">
+
+        <div class="row">
+          <div class="col-6">
+            <label for="idContrasena" class="letra_blanca">Contraseña:</label>
+            <input class="form-control" id="idContrasena" type="password" placeholder="Contraseña">
+            <p id="security_level"></p>
+          </div>
+          <div class="col-6">
+            <label for="idContrasenaRep" class="letra_blanca">Confirma tu Contraseña:</label>
+            <input class="form-control" id="idContrasenaRep" type="password"
+              placeholder="Escriba de nuevo su contraseña">
+          </div>
+        </div>
+        
+        <div class="center">
+          <button class="btn btn-primary mt-3" id="btnRegistrar">Registrar</button>
+        </div>
+
+      </div>
+
+      
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Tel: 7462-6625</p>
+    <p>Correo: ecocarwashlosreales@outlook.com</p>
+    <hr class="line_up">
+    <h4><a class="nav-link" href="Contactos.html">Sobre nosotros</a></h4>
+  </footer>
+
+
+
+
+  <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../js/register.js" defer></script>
+</body>
+
+</html>
